@@ -1,0 +1,3 @@
+name: module-ingress-nginx
+runtime: nodejs
+description: "Module: NGINX Ingress Controller"

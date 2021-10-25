@@ -1,0 +1,23 @@
+{
+  "name": "@vizv/module-ingress-nginx",
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "@vizv/module-metallb": "^1.0.0"
+  },
+  "dependencies": {
+    "@pulumi/kubernetes": "^3.0.0",
+    "@pulumi/pulumi": "^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "prepack": "npm run build",
+    "postpack": "rm -rf dist"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "1.0.0"
+}
