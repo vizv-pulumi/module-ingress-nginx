@@ -14,7 +14,7 @@ export class IngressNginx extends pulumi.ComponentResource {
     args: IngressNginxArgs,
     opts?: pulumi.ComponentResourceOptions,
   ) {
-    super('vizv:foundation:IngressNginx', name, {}, opts)
+    super('vizv:module:IngressNginx', name, {}, opts)
 
     this.chart = new k8s.helm.v3.Chart(
       name,
